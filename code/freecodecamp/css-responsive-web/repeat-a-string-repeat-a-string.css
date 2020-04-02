@@ -1,0 +1,17 @@
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+
+ if(num>0){
+  let i = 0;
+  let repeat = ""
+   while(i<num){
+    repeat +=str
+   i++
+   }
+  return repeat;
+ }else{
+   return ""
+ }
+}
+
+repeatStringNumTimes("abc", 3);
