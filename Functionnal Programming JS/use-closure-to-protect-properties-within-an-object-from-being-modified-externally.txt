@@ -1,0 +1,10 @@
+function Bird() {
+  let weight = 15 ; // declaration of private variable , it's limitated to this context, his scope is limited to this Constructor Function 
+  
+
+  // this is a closure : definition of a function wich can acess the variable declared in the same context with it 
+  this.getWeight = function () {
+   return weight
+  }
+
+}

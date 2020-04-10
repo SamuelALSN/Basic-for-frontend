@@ -1,0 +1,20 @@
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype) // inherits animal Prototype  and Animal constructor 
+
+Dog.prototype.constructor = Dog // here we change his constructor to Dog itselfs 
+
+// adding of method after inheritance 
+Dog.prototype.bark = function () {
+     console.log(" Woof ")
+}
+
+
+
+// Only change code above this line
+
+let beagle = new Dog();
